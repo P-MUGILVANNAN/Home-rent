@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>register</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="register.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="all-content">
+      <div id="animation-box" class="animation-box"></div>
+      <div class="login-content">
+        <div id="login" class="login">
+          <img class="img" src="login.jpg" alt="Login" />
+          <h2 class="title">Login</h2>
+          <form action="index.html" class="login-form">
+            <label for="username">Username</label>
+            <input id="username" type="text" class="username" />
+            <label style="margin-left: 5px" for="password">Password </label>
+            <input type="password" class="password" />
+            <button class="btn">Login</button>
+          </form>
+          <button style="border: 1px solid black; border-radius: 50px; background-color: aquamarine; "><a style="text-decoration: none; color: black;" onclick="registerClick()" href="#" class="regiter-link"
+            >Sign up here.</a
+          ></button>
+        </div>
+        <div id="register" class="register">
+          <img class="img" src="login.jpg" alt="Login" />
+          <h2 class="title">Register</h2>
+          <form action="" class="register-form">
+            <label for="new-username">Username</label>
+            <input id="new-username" type="text" class="new-username" />
+            <label style="margin-left: 4px" for="password">Password</label>
+            <input type="password" class="password" />
+            <button class="btn">Register</button>
+          </form>
+          <button style="border: 1px solid black; border-radius: 50px; background-color: aquamarine; "><a style="text-decoration: none; color: black;" onclick="loginClick()" href="#" class="login-link"
+            >Already had a account. Login here.</a
+          ></button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
